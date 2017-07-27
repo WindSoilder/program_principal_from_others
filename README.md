@@ -183,7 +183,7 @@ In order to implement objects, we will abandon dot notation.  We will focus inst
 
 # Stage of Design Abstraction data types
 ## Encapsulation
-## Designing APIS
+## Designing APIS (The key point to do exercise in projects)
 One of the most important and most challenging steps in building modern software is designing APIs.  There are numerous potential pitfalls when designing an API:
 1. Too hard to implement, making it difficult or impossible to develop
 2. Too hard to use, leading to complicated client code.
@@ -206,7 +206,7 @@ A good api should:
 2. Think in terms of APIs
 3. Even if you will always be the only programmer on that thing
 
-## ....
+## ....others to omit..
 
 # Some suggestion get from other article
 ## Class Design
@@ -235,3 +235,6 @@ Design for Subclassing
 * Don't let implementation details lead into the API.  (exceptions, error codes, etc)
 
 Note that a *leaky abstraction* is an *abstraction* that exposes details and limitations of its underlying implementation to its users that should ideally be hidden away.
+
+# Notes
+The key to success in modular programming is to maintain independent among modules.  We do so by insisting on the API being the only point of dependence between client and implementation.
